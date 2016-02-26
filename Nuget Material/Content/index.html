@@ -1,0 +1,41 @@
+﻿<link href="Content/angular-uibootstrap-css/angualr-ui-bootstrap.css" rel="stylesheet" />
+<link href="Content/angular-material-css/angular-material.css" rel="stylesheet" />
+
+<script src="Scripts/lib/angular/angular.js"></script>
+<script src="Scripts/lib/angular-ui-router/angular-ui-router.js"></script>
+<script src="Scripts/lib/angular-material/angular-material.js"></script>
+<script src="Scripts/lib/angular-aria/angular-aria.js"></script>
+<script src="Scripts/lib/angular-messages/angular-messages.js"></script>
+<script src="Scripts/lib/angular-ui-bootstrap/ui-bootstrap.js"></script>
+<script src="Scripts/lib/oclazyload/ocLazyLoad.js"></script>
+<script src="Scripts/lib/angular-animate/angular-animate.js"></script>
+<script src="Scripts/lib/lodash/lodash.js"></script>
+
+<script src="Scripts/app/appModule.js"></script>
+<script src="Scripts/app/appConfig.js"></script>
+<script src="Scripts/app/modules/layout/myWebsite.layout.js"></script>
+<script src="Scripts/app/modules/layout/js/myWebsite.layout.controller.js"></script>
+<script src="Scripts/app/shared/services/webApiService.js"></script>
+<script src="Scripts/app/modules/homepage/myWebsite.home.js"></script>
+<script src="Scripts/app/modules/homepage/js/myWebsite.home.controllers.js"></script>
+<script src="Scripts/app/modules/homepage/js/myWebsite.home.services.js"></script>
+<script src="Scripts/app/modules/temp/myWebsite.temp.js"></script>
+<script src="Scripts/app/modules/temp/js/myWebsite.temp.controllers.js"></script>
+<script src="Scripts/app/modules/temp/js/myWebsite.temp.services.js"></script>
+<script src="Scripts/app/shared/services/loaderAlertService.js"></script>
+<script src="Scripts/app/shared/services/confirmAlertService.js"></script>
+<script src="Scripts/app/shared/services/tempDataService.js"></script>
+<script src="Scripts/app/shared/services/toastAlertService.js"></script>
+
+
+<body ng-app="myWebsite" class="ng-cloak">
+    <div id="applicationHost" class="container body-content admin-appHost">
+        <div data-ng-include="'/Scripts/app/modules/layout/views/shell.html'"></div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <span class="pull-right text-info credit">Footer</span>
+        </div>
+    </div>
+</body>
+</html>

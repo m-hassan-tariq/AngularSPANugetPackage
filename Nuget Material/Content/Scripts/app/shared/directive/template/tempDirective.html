@@ -1,0 +1,17 @@
+﻿<md-autocomplete ng-disabled="vm.config.disabled "
+                 md-no-cache="vm.config.noCache"
+                 md-selected-item="vm.selectedItem"
+                 md-search-text-change="vm.searchTextChange(vm.searchText)"
+                 md-search-text="vm.searchText"
+                 md-selected-item-change="vm.selectedItemChange(item)"
+                 md-items="item in vm.querySearch(vm.searchText)"
+                 md-item-text="item.CourseName" md-min-length="0"
+                 placeholder="Search item here">
+    <md-item-template>
+        <span> {{item.CourseName}} </span> &nbsp; &nbsp; &nbsp; &nbsp;
+        <md-icon md-svg-icon="{{item.TestCompleted_f ? '/Content/AngularMaterial/icons/action/svg/production/ic_assignment_turned_in_48px.svg' : ''}}"></md-icon>
+    </md-item-template>
+    <md-not-found>
+        No record matching "{{vm.searchText}}" were found.
+    </md-not-found>
+</md-autocomplete>
